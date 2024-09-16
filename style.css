@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:  "Lexend", sans-serif;
+    font-weight: 400;
+    font-style: normal
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:#0d641e;
+}
+
+.contanier{
+     width: 80%;
+     height: 80vh;
+     display: flex;
+     box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+}
+
+.form-image{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background: #b65c0a;
+}
+
+.form-image{
+    width: 35rem;
+}
+
+.form{
+    width: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    background: #ffff;
+
+}.form-header{
+    margin-bottom: 3rem;
+    display:flex;
+    justify-content: space-between;
+}
+
+.login-button{
+    display: flex;
+    align-items: center;
+
+}
+
+.login-button button{
+    border: none;
+    background: #b21611;
+    padding: 0.5rem 1.6rem;
+    border-radius: 5px;
+    cursor: pointer;
+    
+
+}
+
+.login-button button:hover{
+    background-color: #a62521;
+}
+        .login-button button a{
+            text-decoration:none;
+            font-weight: 400;
+            color: #ffff;
+}
+
+.input-group{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.input-box{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.2rem;
+
+}
+.input-box input{
+    margin: 0.0rem 0;
+    padding: 0.1rem 0.9rem;
+    border: none;
+    border-radius:12px;
+    box-shadow: 1px 1px 6px #000000;
+}
+.input-box input:hover{
+    background-color: #eeeeee;
+}
+.input-box input:focus-visible{
+    outline: 1px solid #a62521;
+}
+
+.input-box label,
+.gender-title h6 {
+    font-size: 1rem;
+    font-weight: 400;
+
+}
+
+.input-box input::placeholder{
+    color: #000000be;
+}
+
+.gender-group {
+    display: flex;
+    justify-content:space-between;
+    margin-top: 0.62rem;
+    padding: 0 0.5rem;
+}
+
+.gender-input{
+    display: flex;
+    align-items: center;
+}
+
+.gender-input input{
+    margin-right: 0.35rem;
+}
+.gender-input label{
+    font-size: o.81rem;
+    font-weight: 500;
+}
+
+.continue-button button{
+    width: 90%;
+    margin-top: 2.5rem;
+    border: none;
+    border-radius: 15px;
+    padding: 0.62rem;
+    background-color: #b21611;
+    cursor: pointer;
+}
+.continue-button button:hover{
+    background-color: #eeeeee;
+}
+.continue-button button a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #eeeeee;
+}
+
+@media screen and (max-width: 1200px) {
+    .form-image{
+        display: none;
+    }
+
+    .contanier{
+        width: 50%;
+    }
+
+    .form{
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    
+    .contanier{
+        width: 90%;
+        height: auto;
+    }
+    
+    .input-group{
+        flex-direction: column;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+        max-height: 10rem;
+        padding-right: 5rem;
+
+    }
+
+    .gender-input{
+        margin-top: 2rem;
+    }
+    .gender-group{
+        flex-direction: column;
+        mar
+    }
+    .gender-input {
+        margin-top :0.5rem;
+};
+
